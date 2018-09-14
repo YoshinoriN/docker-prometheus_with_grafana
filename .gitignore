@@ -15,3 +15,7 @@ Thumbs.db
 # Front end
 **/node_modules/*
 **/dist/*
+
+# Prometheus
+**/data/wal/**
+**/data/lock

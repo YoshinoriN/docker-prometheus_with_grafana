@@ -3,7 +3,8 @@ services:
   prometheus:
     image: prom/prometheus:v2.4.0
     volumes:
-      - ./volumes/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./volumes/prometheus/config/prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./volumes/prometheus/data/:/prometheus
     expose:
       - "9090"
     ports:
