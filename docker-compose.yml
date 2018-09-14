@@ -5,6 +5,7 @@ services:
     volumes:
       - ./volumes/prometheus/config/prometheus.yml:/etc/prometheus/prometheus.yml
       - ./volumes/prometheus/data/:/prometheus
+      - /etc/localtime:/etc/localtime:ro
     expose:
       - "9090"
     ports:
